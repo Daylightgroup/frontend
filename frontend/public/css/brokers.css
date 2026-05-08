@@ -1,0 +1,40 @@
+:root{--primary:#00bcd4;--dark:#06131c;--bg:#0b1d2a}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#fff}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:var(--dark);position:sticky;top:0;z-index:1000}
+header h1{font-size:18px}
+nav a{margin-left:20px;color:#fff;text-decoration:none;font-weight:bold}
+nav a:hover{color:var(--primary)}
+
+.hero{height:95vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1610375461246-83df859d849d');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero h2{font-size:52px;max-width:900px}
+.hero p{max-width:700px;margin-top:20px;font-size:18px;opacity:.9}
+.hero button{margin-top:25px;padding:14px 34px;border:none;background:var(--primary);color:#000;font-weight:bold;cursor:pointer;border-radius:5px}
+
+.section{padding:80px 40px;max-width:1100px;margin:auto}
+.section h3{color:var(--primary);margin-bottom:20px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--dark);padding:25px;border-radius:12px;box-shadow:0 10px 20px rgba(0,0,0,.4);transition:.3s}
+.card:hover{transform:translateY(-5px)}
+
+.stats{display:flex;justify-content:space-around;text-align:center;margin-top:40px}
+.stats div h2{color:var(--primary);margin:0}
+
+.highlight{background:#021019;padding:20px;border-left:4px solid var(--primary);margin-top:20px}
+
+.cta{background:var(--primary);color:#000;text-align:center;padding:70px 20px}
+.cta button{padding:14px 34px;border:none;background:#000;color:#fff;cursor:pointer;border-radius:5px}
+
+.form-container{background:var(--dark);padding:30px;border-radius:10px}
+.form-group{margin-bottom:20px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px;border:none;border-radius:6px}
+
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.testimonial{background:var(--dark);padding:20px;border-radius:10px;font-size:14px}
+
+footer{background:var(--dark);text-align:center;padding:30px;margin-top:40px}
+footer small{display:block;margin-top:10px;opacity:.6}
+
+@media(max-width:768px){.hero h2{font-size:32px}.stats{flex-direction:column;gap:20px}}

@@ -1,0 +1,168 @@
+/* GLOBAL */
+
+body{
+font-family:Arial;
+background:#050505;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#0b0b0b;
+border-bottom:1px solid #222;
+}
+
+.navbar-brand{
+color:#d4af37 !important;
+font-weight:bold;
+}
+
+.nav-link{
+color:white !important;
+}
+
+.nav-link:hover{
+color:#d4af37 !important;
+}
+
+/* HERO */
+
+.hero{
+height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:url("assets/img/refinery.jpg") center/cover no-repeat;
+}
+
+.hero h1{
+font-size:48px;
+color:#d4af37;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:80px 20px;
+}
+
+.product-card{
+background:#111;
+border-radius:10px;
+overflow:hidden;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+border:1px solid #d4af37;
+}
+
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.product-card h3{
+color:#d4af37;
+margin-top:15px;
+}
+
+.product-list{
+font-size:14px;
+color:#bbb;
+}
+
+/* FOOTER */
+
+footer{
+background:#080808;
+padding:40px;
+text-align:center;
+margin-top:80px;
+border-top:1px solid #222;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+z-index:1000;
+}
+
+/* CHATBOT */
+
+.chatbot{
+position:fixed;
+bottom:100px;
+right:25px;
+width:300px;
+background:#111;
+border-radius:10px;
+display:none;
+flex-direction:column;
+border:1px solid #333;
+}
+
+.chat-header{
+background:#d4af37;
+padding:10px;
+color:black;
+font-weight:bold;
+}
+
+.chat-body{
+height:250px;
+overflow:auto;
+padding:10px;
+font-size:14px;
+}
+
+.chat-input{
+display:flex;
+}
+
+.chat-input input{
+flex:1;
+border:none;
+padding:10px;
+background:#222;
+color:white;
+}
+
+.chat-input button{
+background:#d4af37;
+border:none;
+padding:10px;
+}
+
+.chat-toggle{
+position:fixed;
+bottom:25px;
+left:25px;
+background:#d4af37;
+color:black;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+cursor:pointer;
+}
