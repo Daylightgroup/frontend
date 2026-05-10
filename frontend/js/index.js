@@ -10,7 +10,7 @@
 ========================= */
 
 // Replace with your real Render backend URL
-const API_BASE_URL = "https://your-backend-name.onrender.com";
+const API_BASE_URL = "https://nile-global-refinery-api.onrender.com";
 
 /* =========================
    MOBILE MENU
